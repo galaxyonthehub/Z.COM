@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>ℤ Feed</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<style>
+	html, body
+{
+  height: 100%;
+  margin: 0;
+}
+
+body
+{
+background-color: rgb(241, 251, 255);
+height: 100%;
+}
+</style>
+
+	<center>
+		<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#" onclick="main()">z</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#Seu perfil" onclick="profile()"style=" font-family: 'league spartan';">Seu perfil</a></li>
+                <li><a href="#Fotos" onclick="photo()"style=" font-family: 'league spartan';">Fotos</a></li>
+              </ul>
+			</center>
+			  <center>
+		<h1 class="HEAQDERV2"style=" font-family: 'League Spartan';">
+			Feed
+			<sup>
+			</sup>
+		</h1>
+		<h3 id="userName" class="color_black"></h3>
+
+		<div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Enviar:</label>
+		<input type="text" id="msg" class="form-control" placeholder="Mensagem">
+		<button onclick="send()" class="btn btn-success">Enviar</button>
+	</div>
+</center>
+
+<script src="Feed.js"></script>
+</body>
+</html>

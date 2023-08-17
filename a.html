@@ -1,0 +1,23 @@
+<head>
+
+</head>
+
+<body>
+  <script>
+    function myFunction() {
+       var imageurl = prompt("paste the image url(if you dont have a url for it you can upload it and paste the upload link)");
+      console.log(imageurl);
+    $("#pic").attr('src',imageurl);
+    }
+  </script>
+  <button onclick="myFunction()">edit</button>
+
+  <div align="center">
+    <title>picture of the day</title>
+    <h1>Jere's picture of the day</h1>
+  </div>
+  <img id="pic" src="https://www.google.com/images/nav_logo242.png">
+
+</body>
+
+</html>
